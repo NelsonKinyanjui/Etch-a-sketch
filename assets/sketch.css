@@ -6,7 +6,11 @@
 .container{
     display:flex;
     justify-content:center;
-    
-    
-    
+    flex-direction: row;
+  
+}
+.box{
+    display: flex;
+    justify-content: center;
+   
 }
