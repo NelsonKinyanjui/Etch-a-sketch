@@ -1,16 +1,20 @@
  const container = document.querySelector('.container')
   
 
-const numberOfDivs = 256;
+const numberOfDivs = 16;
 
 
  for(i=0; i < numberOfDivs; i++){
 
-   const newDiv = document.createElement('div');
-   newDiv.style.border = '1px solid blue';
-   newDiv.style.margin= '4px';
-   newDiv.style.width = '40px'
-   newDiv.style.height = ' 40px'
+   // create new div for each iteration
+
+ const newDiv = document.createElement(div);
+ 
+ newDiv.classList.add('items');
+   
+   
+  items.setAttribute("style","border: 1px solid blue;  margin :4px; width: 100px; height:100px;")
+     
 
    
  container.appendChild(newDiv);
