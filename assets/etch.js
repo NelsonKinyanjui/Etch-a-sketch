@@ -1,18 +1,17 @@
  const container = document.querySelector('.container');
+ const grid = document.querySelector('.grid')
 
- let numberOfSquares = 256;
+ let numberOfSquares = 100;
 
  for (i = 0; i < numberOfSquares; i++){
 
 const createDiv = document.createElement('div');
 
-createDiv.classList.add('.grid')
- 
-const grid = document.querySelector('.grid')
+  
+createDiv.setAttribute("style","border: 1px solid blue; width:50px; height:50px;")
 
-
-createDiv.setAttribute("style","border: 1px solid blue; width:100px; height:100px;")
-container.appendChild(createDiv);
+grid.appendChild(createDiv);
+container.appendChild(grid);
  }
 
 

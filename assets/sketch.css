@@ -1,15 +1,29 @@
- *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ body{
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      height: 100vh;
+      background-color: aliceblue;
  }
 
  .container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
  }
- .grid{
+ .grid {
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
+    width: 500px;
+    height: 500px;
+    border: 2px solid blue;
+ }
+ .grid div {
+   
+    /* flex-direction: row; */
+    flex: 1 0 10%; 
+    border: 1px solid white;
+    box-sizing: border-box; 
  }
