@@ -1,21 +1,19 @@
- const container = document.querySelector('.container')
+ const container = document.querySelector('.container');
 
- const numberOfBoxes = 256;
+ let numberOfSquares = 256;
+
+ for (i = 0; i < numberOfSquares; i++){
+
+const createDiv = document.createElement('div');
+
+createDiv.classList.add('.grid')
  
- for (i=0; i < numberOfBoxes; i++ ){
-  const boxes = document.createElement('div');
+const grid = document.querySelector('.grid')
 
- boxes.classList.add('.box')
 
- boxes.setAttribute("style", "border:1px solid blue; width:100px; height:100px")
-
- container.appendChild(boxes);
-
+createDiv.setAttribute("style","border: 1px solid blue; width:100px; height:100px;")
+container.appendChild(createDiv);
  }
- 
-
- 
-
 
 
  
