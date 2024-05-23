@@ -10,13 +10,16 @@ const createDiv = document.createElement('div');
   
 createDiv.setAttribute("style","border: 1px solid blue; width:50px; height:50px;")
 
+addEventListener("onmouseover",()=>{
+    createDiv.setAttribute("style","background-color:black;")
+    
+     })
+      
+
 grid.appendChild(createDiv);
 container.appendChild(grid);
  }
- addEventListener("onmouseover",()=>{
-createDiv.setAttribute("style","color:black; background-color:black;")
 
- })
 
 
  
